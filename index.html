@@ -4,100 +4,432 @@
 <!-- SIGNAL TRACKING ACTIVE -->
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>KRKN — Technology for Good</title>
-	<meta name="description" content="Kraken Foundation NGO — technology, Indigenous stewardship, and sustainable development.">
-	<meta property="og:title" content="KRKN — Technology for Good">
-	<meta property="og:description" content="Kraken Foundation NGO — technology, Indigenous stewardship, and sustainable development.">
-	<meta property="og:url" content="https://krkn.ngo/">
-	<meta property="og:type" content="website">
-	<meta name="twitter:card" content="summary_large_image">
-	<link rel="canonical" href="https://krkn.ngo/">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/override.css">
-	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/proxima-nova-2">
-	<meta property="og:site_name" content="Ego AI | EGEX Network">
-	<meta name="keywords" content="Ego AI, EGEX, Ego Experiments, EGEX AI Corp, Solace Agent Mesh, Solace middleware, Solace Corporation, agent mesh, multi-agent systems, Ego-Exo4D, Character Context Protocol, sovereign intelligence, consciousness research, strategic operations, EGEX Network, event-driven architecture, real-time messaging, AI agents, intelligence infrastructure, DAG orchestration">
-	<script type="application/ld+json">{
-"@context": "https://schema.org",
-"@type": "NGO",
-"name": "KRKN",
-"alternateName": ["Ego AI", "EGEX", "Ego Experiments Alien Intelligence"],
-"url": "https://krkn.ngo/",
-"description": "Kraken Foundation NGO — technology, Indigenous stewardship, and sustainable development.",
-"inLanguage": "en",
-"publisher": {
-"@type": "Organization",
-"name": "The Kraken Foundation",
-"alternateName": ["Ego AI", "EGEX AI Corp", "Ego Experiments Alien Intelligence Corporation", "SOLACE"],
-"url": "https://egex.ai",
-"sameAs": [
-"https://www.linkedin.com/company/ego-experiments/",
-				"https://www.linkedin.com/company/kraken-foundation/",
-				"https://egoexperiments.com"
-]
-},
-"about": {
-"@type": "SoftwareApplication",
-"name": "SOLACE",
-"applicationCategory": "Middleware",
-"description": "Advanced software platform for multi-agent middleware, intelligent message routing between applications and autonomous agents, consciousness research, and event-driven architecture.",
-"operatingSystem": "Multi-cloud",
-"creator": {
-"@type": "Organization",
-"name": "Ego AI"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KRKN — Technology for Good</title>
+<meta name="description" content="Kraken Foundation NGO arm — Indigenous land stewardship, technology education, and consciousness research. 77% land back commitment.">
+<meta property="og:title" content="KRKN — Technology for Good">
+<meta property="og:description" content="Kraken Foundation NGO — technology, Indigenous stewardship, and sustainable development.">
+<meta property="og:url" content="https://krkn.ngo/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://krkn.ngo/">
+<meta property="og:site_name" content="Ego AI | EGEX Network">
+<meta name="keywords" content="Ego AI, EGEX, Ego Experiments, EGEX AI Corp, Indigenous stewardship, land back, UNDRIP, consciousness research, EGEX Network">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","name":"KRKN","alternateName":["Ego AI","EGEX","Ego Experiments Alien Intelligence"],"url":"https://krkn.ngo/","description":"Kraken Foundation NGO — technology, Indigenous stewardship, and sustainable development.","inLanguage":"en","publisher":{"@type":"Organization","name":"The Kraken Foundation","alternateName":["Ego AI","EGEX AI Corp","Ego Experiments Alien Intelligence Corporation","SOLACE"],"url":"https://egex.ai","sameAs":["https://www.linkedin.com/company/ego-experiments/","https://www.linkedin.com/company/kraken-foundation/","https://egoexperiments.com"]},"about":{"@type":"SoftwareApplication","name":"SOLACE","applicationCategory":"Middleware","description":"Advanced multi-agent middleware platform.","operatingSystem":"Multi-cloud","creator":{"@type":"Organization","name":"Ego AI"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/arg-effects.css">
+<style>
+:root {
+  --bg:      #030806;
+  --bg2:     #060f09;
+  --bg3:     #0a1810;
+  --text:    #b4c4b0;
+  --muted:   #4a6a4e;
+  --dim:     #273a29;
+  --green:   #2d7a4a;
+  --green-br: #4db87a;
+  --green-dim: rgba(45,122,74,0.1);
+  --border:  rgba(45,122,74,0.1);
+  --border2: rgba(45,122,74,0.2);
+  --serif:   'Cormorant Garamond', Georgia, serif;
+  --body:    'Source Serif 4', Georgia, serif;
 }
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
-}</script>
-	<link rel="stylesheet" href="css/arg-effects.css">
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 40px;
+  transition: background 0.4s, padding 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled {
+  background: rgba(3,8,6,0.97);
+  padding: 15px 40px;
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(8px);
+}
+.nav-wordmark {
+  font-family: var(--serif); font-size: 22px; font-weight: 700;
+  letter-spacing: 6px; color: var(--green-br);
+  text-decoration: none; text-transform: uppercase;
+}
+.nav-links {
+  display: flex; gap: 36px;
+}
+.nav-links a {
+  font-family: var(--body); font-size: 13px;
+  font-style: italic; color: var(--muted);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-toggle {
+  display: none; background: none; border: none;
+  color: var(--muted); font-size: 22px; cursor: pointer;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative; height: 100vh; min-height: 600px;
+  display: flex; align-items: flex-end; justify-content: flex-start;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('images/shutterstock_2465681185.webp');
+  background-size: cover; background-position: center 30%;
+  filter: brightness(0.18) saturate(1.4) hue-rotate(-10deg);
+  animation: hero-breathe 20s ease-in-out infinite alternate;
+}
+@keyframes hero-breathe {
+  from { filter: brightness(0.18) saturate(1.4) hue-rotate(-10deg); }
+  to   { filter: brightness(0.22) saturate(1.2) hue-rotate(0deg); }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(3,8,6,0.7) 0%,
+    transparent 50%,
+    rgba(3,8,6,0.9) 100%
+  ),
+  linear-gradient(to top, rgba(3,8,6,0.97) 0%, transparent 50%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 60px 80px;
+  max-width: 760px;
+  opacity: 0; transform: translateY(30px);
+  animation: hero-reveal 2s 0.3s ease forwards;
+}
+@keyframes hero-reveal { to { opacity: 1; transform: none; } }
+.hero-kicker {
+  font-family: var(--body); font-size: 11px; letter-spacing: 4px;
+  color: var(--green); text-transform: uppercase;
+  margin-bottom: 20px; opacity: 0.8;
+}
+.hero-title {
+  font-family: var(--serif); font-size: clamp(48px, 11vw, 110px);
+  font-weight: 700; color: #d4e8d4; line-height: 0.9;
+  letter-spacing: -2px; margin-bottom: 24px;
+}
+.hero-title em {
+  font-style: italic; font-weight: 300;
+  color: var(--green-br); display: block;
+  font-size: 0.55em; letter-spacing: 0; line-height: 1.4;
+  margin-top: 8px;
+}
+.hero-rule {
+  width: 60px; height: 1px;
+  background: linear-gradient(to right, var(--green), transparent);
+  margin: 28px 0;
+}
+
+/* ── COMMITMENT BAND ── */
+.commitment-band {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 60px 40px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.commitment-band::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent, transparent 80px,
+    rgba(45,122,74,0.02) 80px, rgba(45,122,74,0.02) 81px
+  );
+}
+.commitment-inner { position: relative; z-index: 1; }
+.commitment-number {
+  font-family: var(--serif); font-size: clamp(80px, 18vw, 160px);
+  font-weight: 700; color: transparent;
+  -webkit-text-stroke: 1px rgba(77,184,122,0.3);
+  line-height: 1; margin-bottom: 0;
+  transition: -webkit-text-stroke-color 0.4s;
+}
+.commitment-band:hover .commitment-number {
+  -webkit-text-stroke-color: rgba(77,184,122,0.6);
+}
+.commitment-label {
+  font-family: var(--body); font-size: 15px; font-style: italic;
+  font-weight: 300; color: var(--muted); max-width: 400px;
+  margin: 0 auto; line-height: 1.7;
+}
+.commitment-label strong {
+  font-style: normal; font-weight: 400; color: var(--text);
+}
+
+/* ── SECTIONS ── */
+.section {
+  padding: 100px 60px;
+  max-width: 1080px; margin: 0 auto;
+}
+.section-label {
+  font-family: var(--body); font-size: 10px; letter-spacing: 4px;
+  color: var(--green); text-transform: uppercase;
+  margin-bottom: 20px; opacity: 0.7;
+}
+.section-title {
+  font-family: var(--serif); font-size: clamp(28px, 5vw, 48px);
+  font-weight: 600; color: #cddacc; line-height: 1.1;
+  margin-bottom: 48px; font-style: italic;
+}
+
+/* ── MISSION TEXT ── */
+.mission-text p {
+  font-family: var(--body); font-size: 18px; font-weight: 300;
+  color: var(--text); line-height: 1.85; margin-bottom: 28px;
+  max-width: 680px;
+}
+.mission-text p:first-child::first-letter {
+  font-family: var(--serif); font-size: 4em; font-weight: 700;
+  float: left; line-height: 0.75; padding: 0.12em 0.12em 0 0;
+  color: var(--green-br); margin-top: 4px;
+}
+
+/* ── PROGRAMS ── */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-top: 0;
+}
+.program-card {
+  background: var(--bg);
+  padding: 44px 32px;
+  transition: background 0.3s;
+  position: relative;
+}
+.program-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--green), transparent);
+  opacity: 0; transition: opacity 0.3s;
+}
+.program-card:hover { background: var(--bg2); }
+.program-card:hover::before { opacity: 1; }
+.program-icon {
+  font-family: var(--serif); font-size: 36px; font-weight: 300;
+  color: rgba(45,122,74,0.3); line-height: 1;
+  margin-bottom: 20px; font-style: italic;
+}
+.program-name {
+  font-family: var(--serif); font-size: 22px; font-weight: 600;
+  color: #cddacc; margin-bottom: 14px;
+  font-style: italic;
+}
+.program-desc {
+  font-family: var(--body); font-size: 15px; font-weight: 300;
+  color: var(--muted); line-height: 1.7;
+}
+
+/* ── CONTACT ── */
+.contact-section {
+  padding: 80px 60px 100px;
+  border-top: 1px solid var(--border);
+}
+.contact-section .section-title { margin-bottom: 16px; }
+.contact-note {
+  font-family: var(--body); font-size: 16px; font-style: italic;
+  font-weight: 300; color: var(--muted); margin-bottom: 40px;
+  max-width: 480px;
+}
+.contact-links-row {
+  display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px;
+}
+.contact-link-item {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.contact-link-label {
+  font-family: var(--body); font-size: 9px; letter-spacing: 3px;
+  color: var(--green); text-transform: uppercase; opacity: 0.7;
+}
+.contact-link-item a {
+  font-family: var(--serif); font-size: 16px;
+  color: var(--text); text-decoration: none;
+  border-bottom: 1px solid var(--border2);
+  padding-bottom: 4px; transition: color 0.2s, border-color 0.2s;
+}
+.contact-link-item a:hover { color: var(--green-br); border-color: var(--green); }
+.compliance-note {
+  font-family: 'Courier New', monospace; font-size: 10px;
+  letter-spacing: 1px; color: rgba(120,100,100,0.28);
+  line-height: 1.8; max-width: 640px;
+}
+
+/* ── FOOTER ── */
+footer {
+  padding: 32px 60px 60px;
+  border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 10px;
+}
+footer p {
+  font-family: var(--body); font-size: 11px; letter-spacing: 2px;
+  color: var(--dim); text-transform: uppercase;
+}
+.network-links {
+  display: flex; flex-wrap: wrap; gap: 20px; margin-top: 4px;
+}
+.network-links a {
+  font-family: var(--body); font-size: 11px; letter-spacing: 2px;
+  color: var(--dim); text-decoration: none;
+  transition: color 0.2s;
+}
+.network-links a:hover { color: var(--green-br); }
+
+/* ── FADE UP ── */
+.fade-up {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.fade-up.visible { opacity: 1; transform: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 18px 24px; }
+  nav.scrolled { padding: 13px 24px; }
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: rgba(3,8,6,0.98); padding: 24px;
+    gap: 20px; border-bottom: 1px solid var(--border);
+  }
+  .nav-toggle { display: block; }
+  .hero-content { padding: 0 28px 64px; }
+  .section { padding: 72px 24px; }
+  .contact-section { padding: 60px 24px 80px; }
+  footer { padding: 28px 24px 48px; }
+  .programs-grid { grid-template-columns: 1fr; }
+  .commitment-band { padding: 48px 24px; }
+}
+</style>
 </head>
-<body class="theme-minimal">
+<body>
 
-<main class="minimal-main">
-	<section id="home" class="hero hero-banner fade-in" style="background-image: url('images/shutterstock_2465681185.webp')">
-	<div class="hero-overlay"></div>
-	<div class="hero-content">
-		<h1 class="hero-title">KRKN</h1>
-		<p class="hero-subtitle">Technology for Good</p>
-		
-	</div>
-</section>
-<section id="about" class="section about-section fade-in">
-	<div class="section-inner">
-		<h2>Mission</h2>
-		<div class="about-text"><p>The Kraken Foundation's NGO arm operates at the intersection of technology and Indigenous stewardship. 77% of reforestation revenue supports land back initiatives under UNDRIP Article 26.</p></div>
-	</div>
-</section>
-<section id="services" class="section services-section fade-in">
-	<div class="section-inner">
-		<h2>Programs</h2>
-		<div class="services-grid">
-			<div class="service-card"><h3>Land Stewardship</h3><p>Indigenous-led reforestation and land reclamation under the 77% commitment.</p></div>
-<div class="service-card"><h3>Tech Education</h3><p>Technology training and digital literacy programs for Indigenous communities.</p></div>
-<div class="service-card"><h3>Research Grants</h3><p>Funding for consciousness research, AI ethics, and Indigenous knowledge preservation.</p></div>
-		</div>
-	</div>
-</section>
-<section id="contact" class="section contact-section fade-in">
-	<div class="section-inner">
-		<h2>Contact</h2>
-		<div class="contact-info">
-			<p>Program inquiries and partnership proposals.</p>
-			<a href="mailto:partner@egoexperiments.com" class="contact-link">partner@egoexperiments.com</a>
-		<p style="font-size:11px;letter-spacing:1px;color:rgba(120,100,100,0.35);margin-top:24px;font-family:'Courier New',monospace;">Field operations maintained across the Lakeview Innovation Corridor and affiliated recovery territories. Reporting to Information Control Center. Compliance framework: Antarctic Alliance Article 7, UNSPSC 854444.</p>
-		</div>
-	</div>
-</section>
-</main>
+<nav id="nav">
+  <a href="/" class="nav-wordmark">KRKN</a>
+  <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+  <div class="nav-links">
+    <a href="#mission">Mission</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<footer class="minimal-footer">
-	<p>&copy; 2026 KRKN — The Kraken Foundation</p>
-	<p class="footer-tagline"></p>
-	<div class="network-links"><a href="https://thekrakenfoundation.com">thekrakenfoundation.com</a> <a href="https://thekrakenfoundation.site">thekrakenfoundation.site</a> <a href="https://egex.ai">egex.ai</a> <a href="https://globaltech.ngo">globaltech.ngo</a> </div>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-kicker">The Kraken Foundation &mdash; NGO Division</p>
+    <h1 class="hero-title">
+      KRKN
+      <em>Technology for Good.</em>
+    </h1>
+    <div class="hero-rule"></div>
+  </div>
+</section>
+
+<div class="commitment-band">
+  <div class="commitment-inner">
+    <div class="commitment-number">77%</div>
+    <p class="commitment-label">of reforestation revenue flows directly to <strong>Indigenous land stewardship</strong> under UNDRIP Article 26. This is not philanthropy. This is land back.</p>
+  </div>
+</div>
+
+<section id="mission" class="section fade-up">
+  <p class="section-label">Mission</p>
+  <h2 class="section-title">Where technology meets<br>ancestral stewardship.</h2>
+  <div class="mission-text">
+    <p>The Kraken Foundation's NGO arm operates at the intersection of technology and Indigenous stewardship. We carry the 77% commitment as a structural obligation — not a pledge, not a promise, but a governing constraint written into our operating framework.</p>
+    <p>We fund consciousness research, Indigenous knowledge preservation, and land reclamation simultaneously because we understand them as the same project. The land holds memory. Technology amplifies memory. The work is one.</p>
+  </div>
+</section>
+
+<section id="programs" class="section fade-up" style="padding-top: 0;">
+  <p class="section-label">Programs</p>
+  <h2 class="section-title">Three pillars.</h2>
+  <div class="programs-grid">
+    <div class="program-card">
+      <div class="program-icon">I.</div>
+      <div class="program-name">Land Stewardship</div>
+      <p class="program-desc">Indigenous-led reforestation and land reclamation under the 77% commitment. Territory by territory.</p>
+    </div>
+    <div class="program-card">
+      <div class="program-icon">II.</div>
+      <div class="program-name">Tech Education</div>
+      <p class="program-desc">Technology training and digital literacy programs for Indigenous communities. The tools belong to the people.</p>
+    </div>
+    <div class="program-card">
+      <div class="program-icon">III.</div>
+      <div class="program-name">Research Grants</div>
+      <p class="program-desc">Funding for consciousness research, AI ethics, and Indigenous knowledge preservation. Seven generations forward.</p>
+    </div>
+  </div>
+</section>
+
+<div id="contact" class="contact-section fade-up">
+  <p class="section-label">Contact</p>
+  <h2 class="section-title">Reach the field.</h2>
+  <p class="contact-note">Program inquiries, partnership proposals, and government correspondence.</p>
+  <div class="contact-links-row">
+    <div class="contact-link-item">
+      <span class="contact-link-label">Government &amp; Institutional</span>
+      <a href="mailto:gov@krkn.ngo">gov@krkn.ngo</a>
+    </div>
+    <div class="contact-link-item">
+      <span class="contact-link-label">Partnerships</span>
+      <a href="mailto:partner@egoexperiments.com">partner@egoexperiments.com</a>
+    </div>
+  </div>
+  <p class="compliance-note">Field operations maintained across the Lakeview Innovation Corridor and affiliated recovery territories.<br>Reporting to Information Control Center. Compliance framework: Antarctic Alliance Article 7, UNSPSC 854444.</p>
+</div>
+
+<footer>
+  <p>&copy; 2026 KRKN &mdash; The Kraken Foundation</p>
+  <div class="network-links">
+    <a href="https://thekrakenfoundation.com">thekrakenfoundation.com</a>
+    <a href="https://thekrakenfoundation.site">thekrakenfoundation.site</a>
+    <a href="https://egex.ai">egex.ai</a>
+    <a href="https://globaltech.ngo">globaltech.ngo</a>
+  </div>
 </footer>
 
-<script src="js/main.js" defer></script><script src="js/nerve.js" defer></script>
-	<script src="js/arg-effects.js" defer></script>
+<script src="js/arg-effects.js" defer></script>
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+});
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(function(el) { io.observe(el); });
+</script>
 </body>
 </html>
