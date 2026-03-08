@@ -22,6 +22,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/arg-effects.css">
 <style>
+@font-face {
+  font-family: 'Alliance No2';
+  src: url('fonts/AllianceNo2-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --bg:      #030806;
   --bg2:     #060f09;
@@ -34,8 +41,9 @@
   --green-dim: rgba(45,122,74,0.1);
   --border:  rgba(45,122,74,0.1);
   --border2: rgba(45,122,74,0.2);
-  --serif:   'Cormorant Garamond', Georgia, serif;
-  --body:    'Source Serif 4', Georgia, serif;
+  --serif:    'Cormorant Garamond', Georgia, serif;
+  --body:     'Source Serif 4', Georgia, serif;
+  --alliance: 'Alliance No2', 'Helvetica Neue', sans-serif;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -66,10 +74,12 @@ nav.scrolled {
   backdrop-filter: blur(8px);
 }
 .nav-wordmark {
-  font-family: var(--serif); font-size: 22px; font-weight: 700;
-  letter-spacing: 6px; color: var(--green-br);
+  font-family: var(--alliance); font-size: 18px; font-weight: 300;
+  letter-spacing: 8px; color: var(--green-br);
   text-decoration: none; text-transform: uppercase;
 }
+.nav-logo { height: 28px; opacity: 0.7; }
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .nav-links {
   display: flex; gap: 36px;
 }
@@ -120,7 +130,7 @@ nav.scrolled {
 }
 @keyframes hero-reveal { to { opacity: 1; transform: none; } }
 .hero-kicker {
-  font-family: var(--body); font-size: 11px; letter-spacing: 4px;
+  font-family: var(--alliance); font-size: 10px; letter-spacing: 5px;
   color: var(--green); text-transform: uppercase;
   margin-bottom: 20px; opacity: 0.8;
 }
@@ -186,7 +196,7 @@ nav.scrolled {
   max-width: 1080px; margin: 0 auto;
 }
 .section-label {
-  font-family: var(--body); font-size: 10px; letter-spacing: 4px;
+  font-family: var(--alliance); font-size: 9px; letter-spacing: 5px;
   color: var(--green); text-transform: uppercase;
   margin-bottom: 20px; opacity: 0.7;
 }
@@ -332,7 +342,10 @@ footer p {
 <body>
 
 <nav id="nav">
-  <a href="/" class="nav-wordmark">KRKN</a>
+  <a href="/" class="nav-brand">
+    <img src="images/KRAKEN-W.png" alt="KRKN" class="nav-logo">
+    <span class="nav-wordmark">KRKN</span>
+  </a>
   <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
   <div class="nav-links">
     <a href="#mission">Mission</a>
