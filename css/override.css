@@ -1,30 +1,33 @@
-/* Site override: krkn.ngo */
+/* Site override: krkn.ngo — ARG dark mode */
 :root {
---color-primary: #059669;
---color-primary-dim: #047857;
---color-primary-bright: #10b981;
---color-bg: #ffffff;
---color-surface: #f8faf9;
---color-surface-elevated: #f0f4f2;
---color-text: #1a1a1a;
---color-text-muted: #4a5568;
---color-border: rgba(5, 150, 105, 0.15);
---color-border-strong: rgba(5, 150, 105, 0.3);
---color-glow: rgba(5, 150, 105, 0.4);
+--color-primary: #10b981;
+--color-primary-dim: #059669;
+--color-primary-bright: #34d399;
+--color-bg: #050a07;
+--color-surface: #0a0f0c;
+--color-surface-elevated: #111a14;
+--color-text: #b8c9bc;
+--color-text-muted: #5a7a62;
+--color-border: rgba(16, 185, 129, 0.1);
+--color-border-strong: rgba(16, 185, 129, 0.22);
+--color-glow: rgba(16, 185, 129, 0.3);
 --font-heading: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 --font-body: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-		--hero-title-color: #059669;
-		--hero-subtitle-color: #d1d5db;
+--hero-title-color: #34d399;
+--hero-subtitle-color: #5a7a62;
 }
 
-body.theme-minimal { background: #fff; color: #1a1a1a; }
+body, body.theme-minimal { background: #050a07; color: #b8c9bc; }
 .minimal-main { max-width: 900px; padding-top: 3rem; }
-.hero-title { font-size: 3rem; font-weight: 700; }
-.section h2 { color: #059669; }
-.service-card { background: #f8faf9; border: 1px solid rgba(5,150,105,0.12); }
-.service-card h3 { color: #047857; }
-.service-card p { color: #4a5568; }
-.minimal-footer { color: #94a3b8; }
-.contact-link { border-color: #047857; color: #047857; }
-.contact-link:hover { background: #047857; color: #fff; }
-
+.hero-title { font-size: 3rem; font-weight: 700; color: #34d399; }
+.hero-subtitle { color: #5a7a62; }
+.section h2 { color: #10b981; }
+.service-card { background: rgba(16,185,129,0.03); border: 1px solid rgba(16,185,129,0.08); }
+.service-card h3 { color: #34d399; }
+.service-card p { color: #5a7a62; }
+.minimal-footer { color: rgba(90,122,98,0.5); }
+.minimal-footer a { color: rgba(16,185,129,0.4); }
+.contact-link { border-color: rgba(16,185,129,0.3); color: #10b981; }
+.contact-link:hover { background: rgba(16,185,129,0.08); color: #34d399; }
+.about-text p, .contact-info p { color: #5a7a62; }
+.hero-overlay { background: linear-gradient(to bottom, rgba(5,10,7,0.3) 0%, rgba(5,10,7,0.85) 100%) !important; }
